@@ -1,0 +1,32 @@
+﻿<UserControl x:Class="EmguSamples.Main.CameraPnl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:ui="clr-namespace:Emgu.CV.UI;assembly=Emgu.CV.UI"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid x:Name="GdRootZm" Margin="200">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <WindowsFormsHost >
+            <ui:ImageBox x:Name="ImgNormalZm"/>
+        </WindowsFormsHost>
+        <WindowsFormsHost Grid.Column="1">
+            <ui:ImageBox x:Name="ImgGrayZm"/>
+        </WindowsFormsHost>
+        <WindowsFormsHost Grid.Row="1">
+            <ui:ImageBox x:Name="ImgSmoothedGrayZm"/>
+        </WindowsFormsHost>
+        <WindowsFormsHost Grid.Column="1" Grid.Row="1">
+            <ui:ImageBox x:Name="ImgCannyZm"/>
+        </WindowsFormsHost>
+    </Grid>
+</UserControl>

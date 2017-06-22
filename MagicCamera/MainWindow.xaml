@@ -1,0 +1,9 @@
+﻿<publicLibrary:BaseWnd x:Class="MagicCamera.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:publicLibrary="clr-namespace:PublicLibrary;assembly=PublicLibrary"
+        Title="MainWindow" Height="350" Width="525" WindowState="Maximized" WindowStyle="None">
+    <Grid x:Name="GdRootZm">
+
+    </Grid>
+</publicLibrary:BaseWnd>

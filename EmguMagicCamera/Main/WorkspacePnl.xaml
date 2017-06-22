@@ -1,0 +1,103 @@
+﻿<UserControl x:Class="EmguMagicCamera.Main.WorkspacePnl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="1080" d:DesignWidth="1920">
+    <UserControl.Resources>
+        <Style x:Key="BorderNormalStyle" TargetType="{x:Type Border}">
+            <Setter Property="Width" Value="120"/>
+            <Setter Property="Height" Value="26"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="3"/>
+            <Setter Property="Background" Value="Transparent"/>
+        </Style>
+    </UserControl.Resources>
+    <Grid x:Name="GdRootZm">
+        <Grid x:Name="GdCameraZm" VerticalAlignment="Center" HorizontalAlignment="Center"
+              Width="640" Height="480" Margin="0,-100,0,100"/>
+        <WrapPanel VerticalAlignment="Bottom" HorizontalAlignment="Center"
+                   Margin="50" Width="650">
+            <Border Style="{StaticResource BorderNormalStyle}" Tag="Normal" 
+                    MouseLeftButtonUp="BdrCameraFilter_OnMouseLeftButtonUp">
+                <TextBlock Text="Normal" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" Tag="Gray" 
+                    MouseLeftButtonUp="BdrCameraFilter_OnMouseLeftButtonUp">
+                <TextBlock Text="Gray" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" Tag="SmallGray" 
+                    MouseLeftButtonUp="BdrCameraFilter_OnMouseLeftButtonUp">
+                <TextBlock Text="SmallGray" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" Tag="SmoothGray" 
+                    MouseLeftButtonUp="BdrCameraFilter_OnMouseLeftButtonUp">
+                <TextBlock Text="SmoothGray" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" Tag="Canny" 
+                    MouseLeftButtonUp="BdrCameraFilter_OnMouseLeftButtonUp">
+                <TextBlock Text="Canny" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+
+
+            <!--"Winter", "Summer",
+            "Spring", "Rainbow", "Pink", "Ocean", "Jet", "Hsv", "Hot" , "Cool" , "Bone" , "Autumn" 
+            ,"BitwiseNot"-->
+            <Border Style="{StaticResource BorderNormalStyle}" Tag="Winter" 
+                    MouseLeftButtonUp="BdrCameraFilter_OnMouseLeftButtonUp">
+                <TextBlock Text="Winter" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" Tag="Summer" 
+                    MouseLeftButtonUp="BdrCameraFilter_OnMouseLeftButtonUp">
+                <TextBlock Text="Summer" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" Tag="Spring" 
+                    MouseLeftButtonUp="BdrCameraFilter_OnMouseLeftButtonUp">
+                <TextBlock Text="Spring" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" Tag="Rainbow" 
+                    MouseLeftButtonUp="BdrCameraFilter_OnMouseLeftButtonUp">
+                <TextBlock Text="Rainbow" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" Tag="Pink" 
+                    MouseLeftButtonUp="BdrCameraFilter_OnMouseLeftButtonUp">
+                <TextBlock Text="Pink" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" Tag="Jet" 
+                    MouseLeftButtonUp="BdrCameraFilter_OnMouseLeftButtonUp">
+                <TextBlock Text="Jet" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" Tag="Hsv" 
+                    MouseLeftButtonUp="BdrCameraFilter_OnMouseLeftButtonUp">
+                <TextBlock Text="Hsv" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" Tag="Hot" 
+                    MouseLeftButtonUp="BdrCameraFilter_OnMouseLeftButtonUp">
+                <TextBlock Text="Hot" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" Tag="Cool" 
+                    MouseLeftButtonUp="BdrCameraFilter_OnMouseLeftButtonUp">
+                <TextBlock Text="Cool" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" Tag="Bone" 
+                    MouseLeftButtonUp="BdrCameraFilter_OnMouseLeftButtonUp">
+                <TextBlock Text="Bone" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" Tag="Autumn" 
+                    MouseLeftButtonUp="BdrCameraFilter_OnMouseLeftButtonUp">
+                <TextBlock Text="Autumn" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" Tag="BitwiseNot" 
+                    MouseLeftButtonUp="BdrCameraFilter_OnMouseLeftButtonUp">
+                <TextBlock Text="BitwiseNot" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" Tag="EdgePreservingFilter" 
+                    MouseLeftButtonUp="BdrCameraFilter_OnMouseLeftButtonUp">
+                <TextBlock Text="EdgePreservingFilter" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+        </WrapPanel>
+    </Grid>
+</UserControl>

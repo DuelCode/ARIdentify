@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="VisionDetctor.Main.WorkspacePnl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:forms="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+             Width="1920" Height="1080">
+    <Grid x:Name="GdRootZm">
+          <Grid x:Name="GdCameraZm" VerticalAlignment="Center" HorizontalAlignment="Left" Width="1024" Height="768"
+                Background="White" Margin="100" />
+       
+        <WindowsFormsHost VerticalAlignment="Center" HorizontalAlignment="Right" Height="450" Margin="100" Width="600">
+            <forms:PictureBox x:Name="ImgMainZm"/>
+        </WindowsFormsHost>
+    </Grid>
+</UserControl>

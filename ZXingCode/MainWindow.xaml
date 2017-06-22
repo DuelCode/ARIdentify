@@ -1,0 +1,37 @@
+﻿<publicLibrary:BaseWnd x:Class="ZXingCode.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:publicLibrary="clr-namespace:PublicLibrary;assembly=PublicLibrary"
+        Title="MainWindow" Height="499" Width="805" WindowState="Maximized" WindowStyle="None">
+    <Grid>
+        <TabControl Height="490" HorizontalAlignment="Left" Margin="0,1,0,0" Name="tabControl1" VerticalAlignment="Top" Width="797">
+            <TabItem Header="Decode" Name="tabItemDecode">
+                <Grid>
+                    <Image Height="378" HorizontalAlignment="Left" Margin="12,75,0,0" Name="imageBarcode" Stretch="Uniform" VerticalAlignment="Top" Width="493" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="12,46,0,0" Name="txtBarcodeImageFile" VerticalAlignment="Top" Width="595" IsReadOnly="True" TextChanged="txtBarcodeImageFile_TextChanged" />
+                    <Button Content="..." Height="23" HorizontalAlignment="Left" Margin="626,46,0,0" Name="btnSelectFile" VerticalAlignment="Top" Width="26" Click="btnSelectFile_Click" />
+                    <Button Content="Decode" Height="23" HorizontalAlignment="Left" Margin="674,46,0,0" Name="btnDecode" VerticalAlignment="Top" Width="75" Click="btnDecode_Click" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="526,305,0,0" Name="txtBarcodeType" VerticalAlignment="Top" Width="265" IsReadOnly="True" />
+                    <Label Content="Barcode Image File" Height="28" HorizontalAlignment="Left" Margin="12,12,0,0" Name="label1" VerticalAlignment="Top" Width="124" />
+                    <Label Content="Barcode Type" Height="28" HorizontalAlignment="Left" Margin="526,271,0,0" Name="label2" VerticalAlignment="Top" Width="95" />
+                    <Label Content="Content" Height="28" HorizontalAlignment="Left" Margin="526,333,0,0" Name="label3" VerticalAlignment="Top" Width="95" />
+                    <TextBox Height="97" HorizontalAlignment="Left" Margin="526,366,0,0" TextWrapping="WrapWithOverflow" Name="txtBarcodeContent" VerticalAlignment="Top" Width="265" IsReadOnly="True" />
+                    <Label Height="28" HorizontalAlignment="Left" Margin="226,75,0,0" Name="labDuration" VerticalAlignment="Top" Width="184" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Encode" Name="tabItemEncode">
+                <Grid>
+                    <Image Height="224" HorizontalAlignment="Left" Margin="6,40,0,0" Name="imageBarcodeEncoder" Stretch="None" VerticalAlignment="Top" Width="200" />
+                    <Path Name="imageBarcodeEncoderGeometry" Fill="Black" Width="200" Height="224" Margin="6,40,298,49" />
+                    <Button Content="Encode" Height="23" HorizontalAlignment="Left" Margin="416,269,0,0" Name="btnEncode" VerticalAlignment="Top" Width="75" Click="btnEncode_Click" />
+                    <Label Content="Barcode Type" Height="28" HorizontalAlignment="Left" Margin="226,6,0,0" Name="label4" VerticalAlignment="Top" Width="95" />
+                    <Label Content="Content" Height="28" HorizontalAlignment="Left" Margin="226,132,0,0" Name="label5" VerticalAlignment="Top" Width="95" />
+                    <TextBox Height="97" HorizontalAlignment="Left" Margin="226,166,0,0" Name="txtBarcodeContentEncode" VerticalAlignment="Top" Width="265"  />
+                    <ComboBox Height="23" HorizontalAlignment="Left" Margin="226,40,0,0" Name="cmbEncoderType" VerticalAlignment="Top" Width="265" />
+                    <ComboBox Height="23" HorizontalAlignment="Left" Margin="226,103,0,0" Name="cmbRendererType" VerticalAlignment="Top" Width="265" />
+                    <Label Content="Renderer Type" Height="28" HorizontalAlignment="Left" Margin="226,69,0,0" Name="label6" VerticalAlignment="Top" Width="95" />
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</publicLibrary:BaseWnd>

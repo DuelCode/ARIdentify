@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="VTTArIdentify.Main.WorkspacePnl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="1080" d:DesignWidth="1920">
+    <Grid x:Name="GdRootZm" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="630"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+         <Grid x:Name="GdCameraZm" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="800" Height="560" Margin="30"/> 
+        <Grid HorizontalAlignment="Center" Grid.Row="1" Width="800">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <StackPanel VerticalAlignment="Top" Orientation="Horizontal" Height="30" HorizontalAlignment="Right">
+                <Border Height="26" Width="80" VerticalAlignment="Center" BorderThickness="1" Background="Transparent"
+                        x:Name="BdrClearZm" BorderBrush="Black" Margin="0,0,10,0">
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Clear"/>
+                </Border>
+                <Border Height="26" Width="80" VerticalAlignment="Center" BorderThickness="1" Background="Transparent"
+                        x:Name="BdrStartZm" BorderBrush="Black" Margin="0,0,10,0">
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Start"/>
+                </Border>
+                <Border Height="26" Width="80" VerticalAlignment="Center" BorderThickness="1" Background="Transparent"
+                        x:Name="BdrPauseZm" BorderBrush="Black" Margin="0,0,10,0">
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" Text="Pause"/>
+                </Border>
+            </StackPanel>
+ 
+            <Grid x:Name="GdResultZm" Grid.Row="1">
+                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="TbkResultZm"
+                           FontSize="18" Text="未识别" TextWrapping="WrapWithOverflow"/>
+            </Grid>
+        </Grid>
+
+        <ScrollViewer Grid.RowSpan="2" HorizontalAlignment="Left" Margin="0,30" HorizontalScrollBarVisibility="Disabled"
+                      Width="550" x:Name="SvResultErrorZm">
+            <ListBox x:Name="LbxResultErrorZm"/>
+        </ScrollViewer>
+        <ScrollViewer Grid.RowSpan="2" HorizontalAlignment="Right" Margin="0,30" HorizontalScrollBarVisibility="Disabled"
+                      Width="550" x:Name="SvResultZm">
+            <ListBox x:Name="LbxResultZm"/>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

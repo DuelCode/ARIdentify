@@ -1,0 +1,106 @@
+﻿<UserControl x:Class="MagicCamera.Main.WorkspacePnl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <Style x:Key="BorderNormalStyle" TargetType="{x:Type Border}">
+            <Setter Property="Width" Value="180"/>
+            <Setter Property="Height" Value="26"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="3"/>
+            <Setter Property="Background" Value="Transparent"/>
+        </Style>
+    </UserControl.Resources>
+    <Grid x:Name="GdRootZm">
+        <Grid x:Name="GdCameraZm" VerticalAlignment="Center" HorizontalAlignment="Center"
+              Width="800" Height="560" Margin="0,-100,0,100"/>
+
+        <WrapPanel VerticalAlignment="Bottom" HorizontalAlignment="Center"
+                   Margin="50" Width="800">
+            <Border  Style="{StaticResource BorderNormalStyle}" x:Name="BdrNoneZm">
+                <TextBlock Text="None" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" x:Name="BdrInvertZm">
+                <TextBlock Text="Invert" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" x:Name="BdrGrayscaleBT709Zm">
+                <TextBlock Text="GrayscaleBT709" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" x:Name="BdrGrayscaleRMYZm">
+                <TextBlock Text="GrayscaleRMY" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" x:Name="BdrSepiaZm">
+                <TextBlock Text="Sepia" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" x:Name="BdrRotateChannelsZm">
+                <TextBlock Text="RotateChannels" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" x:Name="BdrHueModifierZm">
+                <TextBlock Text="HueModifier" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" x:Name="BdrSaturationCorrectionZm">
+                <TextBlock Text="SaturationCorrection" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" x:Name="BdrBrightnessCorrectionZm">
+                <TextBlock Text="BrightnessCorrection" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" x:Name="BdrContrastCorrectionZm">
+                <TextBlock Text="ContrastCorrection" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" x:Name="BdrHSLFilteringZm">
+                <TextBlock Text="HSLFiltering" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" x:Name="BdrYCbCrLinearZm">
+                <TextBlock Text="YCbCrLinear" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" x:Name="BdrYCbCrFilteringZm">
+                <TextBlock Text="YCbCrFiltering" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" x:Name="BdrConvolutionZm">
+                <TextBlock Text="Convolution" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" x:Name="BdrSharpenZm">
+                <TextBlock Text="Sharpen" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" x:Name="BdrLevelsLinearZm">
+                <TextBlock Text="LevelsLinear" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" x:Name="BdrJitterZm">
+                <TextBlock Text="Jitter" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" x:Name="BdrOilPaintingZm">
+                <TextBlock Text="OilPainting" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" x:Name="BdrGaussianBlurZm">
+                <TextBlock Text="GaussianBlur" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" x:Name="BdrTexturerZm">
+                <TextBlock Text="Texturer" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" x:Name="BdrSobelEdgeDetectorZm">
+                <TextBlock Text="SobelEdgeDetector" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+
+            <Border Style="{StaticResource BorderNormalStyle}" x:Name="BdrThresholdZm">
+                <TextBlock Text="Threshold" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" x:Name="BdrFloydSteinbergDitheringZm">
+                <TextBlock Text="FloydSteinbergDithering" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" x:Name="BdrOrderedDitheringZm">
+                <TextBlock Text="OrderedDithering" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" x:Name="BdrDifferenceEdgeDetectorZm">
+                <TextBlock Text="DifferenceEdgeDetector" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+            <Border Style="{StaticResource BorderNormalStyle}" x:Name="BdrHomogenityEdgeDetectorZm">
+                <TextBlock Text="HomogenityEdgeDetector" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            </Border>
+        </WrapPanel>
+    </Grid>
+</UserControl>
